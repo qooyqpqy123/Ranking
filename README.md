@@ -44,7 +44,7 @@ The code file **Table4.R** contains the codes for reproducing Table 4 of the rea
 
 **Run time** of **Table4.R** is less than 10 min.
 
-The code file **Table5-6.R** contains the codes for reproducing Tables 5 and 6 of the real data analysis. The setting of is given in lines 14-17, one only need to set up these parameters according to the different settings of Table 5 and 6 in our paper and run this code file directly. The outputs are given in lines 96-103. We also mark their corresponding reproduced columns in Table 5-6.
+The code file **Table5-6.R** contains the codes for reproducing Tables 5 and 6 of the real data analysis. The setting of is given in lines 14-17, one only need to set up these parameters $(M,p)$ according to the different settings of Table 5 and 6 in our paper and run this code file directly. The outputs are given in lines 96-103. 
 
 **Run time** of **Table5-6.R** is less than 10 min.
 
