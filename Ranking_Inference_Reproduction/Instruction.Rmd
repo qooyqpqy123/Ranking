@@ -1,7 +1,3 @@
----
----
----
-
 # Reproduction for the methodology of "Ranking Inferences Based on the Top Choice of Multi-way Comparisons"
 
 # 1. **Real Data Analysis**
@@ -32,11 +28,13 @@ The cleaned datasets are put in `/Ranking_Inference_Reproduction/Real_Data/jeste
 
 ## Codes Description and Implementation Details:
 
-There are two files under the folder: `Ranking_Inference_Reproduction/Real_Data/`
+There are three files under the folder: `Ranking_Inference_Reproduction/Real_Data/`
 
 1.  Table4.R,
 
 2.  Table5-6.R
+
+3. Source_Real_Data.R 
 
 ### Folder /Ranking_Inference_Reproduction/Real_Data/:
 
@@ -49,6 +47,8 @@ The code file **Table4.R** contains the codes for reproducing Table 4 of the rea
 The code file **Table5-6.R** contains the codes for reproducing Tables 5 and 6 of the real data analysis. The setting of is given in lines 14-17, one only need to set up these parameters according to the different settings of Table 5 and 6 in our paper and run this code file directly. The outputs are given in lines 96-103. We also mark their corresponding reproduced columns in Table 5-6.
 
 **Run time** of **Table5-6.R** is less than 10 min.
+
+The code file **Source_Real_Data.R** contains all helper functions that used in Real Data Analysis. The detailed instruction on the input and outputs of these functions are put in this file directly.
 
 # 2. **Simulation Studies**
 
@@ -85,3 +85,7 @@ This is the code file `Table1-3.R` contains codes for reproducing the methodolog
 The setting of the code is given in lines 3. The output of this simulation is given in lines 255-297, where we specify the meanings of all outputs and their corresponding position in Tables 1-3.
 
 **Run time** of **Table1-3.R** for any given setting described above is around 6 hrs.
+
+### 5. File  /Ranking_Inference_Reproduction/Simulation/Source_Simulation.R
+
+Like the case of Real Data analysis, this file also contains all helper functions used in the simulations.
