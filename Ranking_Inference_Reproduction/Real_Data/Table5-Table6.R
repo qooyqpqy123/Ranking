@@ -74,7 +74,7 @@ FG.V = F.V/var.V
 B.M = matrix(rnorm(L*B),L,B)                
 R.left_vec<-c()                             ## [R.left,R.right] is our two-sided CI for every p and M    
 R.right_vec<-c()
-R.one_vec<-c()                               ## [R.one,n] is our one-sided CI (column OC in Table 4)
+R.one_vec<-c()                     
 for (i in c(1:length(w.idx_new))){
   m=w.idx_new[i]                             #construct confidence intervals for items 10,30,50,70,90
   F.M = FG.V[m,] - t(FG.V[-m,])              #For every entry m construct test statistics
@@ -91,15 +91,15 @@ for (i in c(1:length(w.idx_new))){
   R.right = n - sum(1*(w.V.N>cut.v))
   R.length = R.right-R.left
   R.CI = sum(1*(m<R.left))+sum(1*(m>R.right))
-  R.one = 1 + sum(1*(-w.V.N>cut.v.one))               ## [R.one,n] one-sided CI for item m
+  R.one = 1 + sum(1*(-w.V.N>cut.v.one))               
   cutZ = qnorm(0.975)
   #####################################################################################
   R.left_vec<-c(R.left_vec, R.left)                                   ## [R.left,R.right] is our two-sided CI      
   R.right_vec<-c(R.right_vec,R.right) 
-  R.one_vec<-c(R.one_vec,R.one)                                       ## [R.left,n] is our one-sided CI
-  }
+  R.one_vec<-c(R.one_vec,R.one)                                      
+  }]}
   #####################################################################################
-  print(R.left_vec)                                                   ## [R.left,R.right] is our two-sided CI (column TC1 in Table 5 or 6)  for different choice of $MM0$ and p.
+  print(R.left_vec)                                                   ## [R.left,R.right] is our two-sided CI for different choice of $MM0$ and p.
   print(R.right_vec) 
   
   
